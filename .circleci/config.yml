@@ -71,6 +71,7 @@ jobs:
       - image: ruby:latest
     working_directory: ~/repo
     steps:
+      - checkout
       - when:
           condition: <<parameters.push>>
           steps:
