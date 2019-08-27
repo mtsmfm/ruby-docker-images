@@ -171,14 +171,11 @@ workflows:
               only:
                 - master
       - build_trunk:
+          push: true
           filters:
             branches:
               ignore:
                 - master
-      - build_2_6
-      - build_2_5
-      - build_2_4
-      - build_2_3
 
   nightly:
     triggers:
